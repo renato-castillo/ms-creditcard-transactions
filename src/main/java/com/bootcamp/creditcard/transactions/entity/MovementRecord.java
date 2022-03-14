@@ -9,10 +9,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class MovementRecord extends BaseEntity {
 
-
-
-    private String documentNumber;
-
-    private String documentType;
+    private String serviceName;
 
 }

@@ -15,7 +15,11 @@ public abstract class BaseEntity {
 
     private Float amount;
 
-    private String creditCardId;
+    private String creditCardIdentifier;
+
+    private String documentNumber;
+
+    private String documentType;
 
     private LocalDateTime createdAt;
 

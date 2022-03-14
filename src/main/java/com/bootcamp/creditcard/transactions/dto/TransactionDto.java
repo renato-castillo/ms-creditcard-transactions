@@ -11,10 +11,8 @@ public class TransactionDto {
 
     private Float amount;
 
-    private String creditCardName;
+    private String creditCardIdentifier;
 
-    private String documentNumber;
-
-    private String documentType;
+    private String serviceName;
 
 }
