@@ -26,17 +26,17 @@ public class MovementRecordController {
     }
 
     @PostMapping
-    public Mono<TransactionDto> createMovement(MovementDto movementDto) {
+    public Mono<TransactionDto> createMovement(@RequestBody MovementDto movementDto) {
         return movementRecordResource.createMovement(movementDto);
     }
 
     @PutMapping
-    public Mono<MovementDto> updateMovement(MovementDto movementDto) {
+    public Mono<MovementDto> updateMovement(@RequestBody MovementDto movementDto) {
         return movementRecordResource.update(movementDto);
     }
 
     @DeleteMapping
-    private Mono<Void> delete(MovementDto movementDto) {
+    private Mono<Void> delete(@RequestBody MovementDto movementDto) {
         return movementRecordResource.delete(movementDto);
     }
 
